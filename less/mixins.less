@@ -1,0 +1,19 @@
+.flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button(@fg, @bg, @height, @width, @font-color, @font-size) {
+  .flex;
+  color: @fg;
+  border: 1px solid @silver;
+  background-color: @bg;
+  width: @width;
+  height: @height;
+  font-size: @font-size;
+
+  @media @mobile {
+    width: 100%;
+  }
+}
