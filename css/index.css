@@ -281,7 +281,7 @@ header .nav .tab .side {
     text-transform: uppercase;
   }
 
-  header .nav .tab .side {
+  header .nav .tab .menu {
     font-size: 31px;
     width: 24%;
     margin: 0;
@@ -301,7 +301,7 @@ header .nav .tab .side {
     margin: auto;
   }
 
-  header .side:hover {
+  header .menu:hover {
     color: gray;
     text-decoration: none;
   }
@@ -340,6 +340,6 @@ header .nav .tab .side {
     letter-spacing: .4rem;
     line-height: 2.2rem;
     width: 98%;
-    margin: 6%;  
+    margin: 6%;
   }
 }
