@@ -12,6 +12,7 @@ class TabMenu {
     Array.from(components).forEach(component => component.classList.remove('menu-selected'))
     this.element.classList.add("menu-selected")
     this.tabComponent.tabSelect()
+    console.log("Do something!")
   }
 
 }
@@ -23,8 +24,9 @@ class TabComponent {
 
   tabSelect() {
     const tabs = document.querySelectorAll('.menu')
-    tabs.forEach(component => component.classList.remove('menu-selected'))
-    this.element.classList.add('menu-selected')
+    tabs.forEach(component => component.classList.remove('component-select'))
+    this.element.classList.add('component-select')
+    console.log("Do something!")
   }
 }
 
