@@ -225,9 +225,31 @@ header .nav {
   color: white;
 }
 
+.submit button {
+	justify-content: center;
+	width: 14rem;
+	display: flex;
+	flex-wrap: wrap;
+	height: 2rem;
+	cursor: pointer;
+	padding: .7rem;
+	margin: 2% auto;
+	text-transform: uppercase;
+	border-radius: 4px;
+	color: white;
+	letter-spacing: .2rem;
+	font-family: 'inherit';
+}
+
 .tab {
 	display: flex;
 	width: 100%;
+}
+
+header .nav:hover {
+		text-decoration: none;
+		color: white;
+		transition: background-color .5s
 }
 
 header .nav .tab .menu {
@@ -237,6 +259,7 @@ header .nav .tab .menu {
   justify-content: center;
   margin: auto;
   padding: 0 1.25rem 0 1.45rem;
+	border-radius: 10px;
   font-size: 1.2rem;
   border: 1px solid white;
   line-height: 4.75rem;
@@ -248,8 +271,8 @@ header .nav .tab .menu {
 }
 
 .components {
-  width : 100%;
-  margin : 5% auto 0 auto;
+  width: 100%;
+  margin: 5% auto 0 auto;
   align-content: center;
 }
 
@@ -289,13 +312,22 @@ header .nav .tab .menu {
   text-align: center;
 
 }
+@media (max-width: 500px) {
+	.tab {
+		flex-direction: column;
+	}
+}
 
+.menu:hover {
+	background-color: gray;
+}
 
 @media (min-width: 500px) {
     header {
         width: 100%;
         margin: auto;
     }
+
     header .top{
         width: 60%;
         max-height: 50rem;
@@ -353,7 +385,8 @@ header .nav .tab .menu {
 
     header .nav:hover {
         text-decoration: none;
-        color: rgb(34, 29, 29);
+				color: white;
+				transition: background-color .5s
     }
 
     .components {

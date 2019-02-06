@@ -1,16 +1,17 @@
-// create a class for tab
+// // create a class for tab
 class TabMenu {
   constructor(element) {
     this.element = element;
     this.data = this.element.dataset.menu
-    this.components = Array.from(this.components).map(component => new TabComponent(component))
+    this.components = document.querySelector(`.menu[data-menu="${this.data}"]`)
+    this.tabComponent = new TabComponent(this.components)
     this.element.addEventListener("click", () => this.tabSelect())
   }
   tabSelect() {
-    const components = document.querySelectorAll(".component")
-    components.forEach(component => component.style.display = "none")
-    this.element.classList.add(".menu")
-    this.components.forEach(component => component.selectComponent())
+    const components = document.querySelectorAll(".menu")
+    Array.from(components).forEach(component => component.classList.remove('menu-selected'))
+    this.element.classList.add("menu-selected")
+    this.tabComponent.tabSelect()
   }
 
 }
@@ -20,10 +21,11 @@ class TabComponent {
     this.element = element;
   }
 
-  selectComponent() {
-    this.element.style.display = ".component"
+  tabSelect() {
+    const tabs = document.querySelectorAll('.menu')
+    tabs.forEach(component => component.classList.remove('menu-selected'))
+    this.element.classList.add('menu-selected')
   }
 }
 
-let menus = document.querySelectorAll(".menu")
-menus.forEach(menu => new TabMenu(menu))
+let menus = document.querySelectorAll(".menu").forEach(menu => new TabMenu(menu))
