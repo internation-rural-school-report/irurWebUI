@@ -10,12 +10,12 @@
   border-radius: @radius;
 }
 
-.button(@fg, @bg, @height, @width, @font-color, @font-size) {
-  .br(17px);
+.button(@fg, @bg, @height, @width, @font-size) {
   .flex;
   color: @fg;
   border: 1px solid @silver;
   background-color: @bg;
+  cursor: pointer;
   width: @width;
   height: @height;
   font-size: @font-size;
@@ -24,8 +24,4 @@
     width: 100%;
   }
 
-  &:hover {
-    color: @button-bg;
-    background: @white;
-  }
 }

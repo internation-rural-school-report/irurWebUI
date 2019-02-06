@@ -1,112 +1,133 @@
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    vertical-align: baseline;}
-    article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
-
-  body {
-      line-height: 1;
-  }
-
-  ol, ul {
-      list-style: none;
-  }
-
-  blockquote, q {
-      quotes: none;
-  }
-
-  blockquote:before, blockquote:after, q:before, q:after {
-      content: '';
-      content: none;
-  }
-
-    /* table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-
-    body {
-        -webkit-text-size-adjust: none;
-    }
-    mark {
-        background-color: transparent;
-        color: inherit;
-    }
-
-    input::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    } */
-
-ol, ul {
-	list-style: none;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
-
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-/* body {
-	-webkit-text-size-adjust: none;
-} */
-
-/* mark {
-	background-color: transparent;
-	color: inherit;
-} */
-
-/* input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-} */
-/* table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} */
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -115,10 +136,10 @@ html, body {
     font-size: 62.5%;
     width: 100%;
 }
+
 body {
     width: 100%;
 }
-
 
 h1, h2, h3, h4, h5 {
     font-family: 'inherit';
@@ -131,7 +152,24 @@ header {
     justify-content: center;
 }
 
-.main-page{
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 52px;
+  padding-bottom: 10px;
+}
+h4 {
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+p {
+  font-size: 26px;
+  line-height: 1.7;
+  padding-bottom: 10px;
+}
+
+.main-page {
 	background-image: url("../img/image-1.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -142,73 +180,72 @@ header {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
-  header .top{
+
+header .top{
     width: 90%;
     max-height: 50rem;
     padding: 3rem 2rem;
     overflow: hidden;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
     margin: 20% auto 5% auto;
     border-top-color: initial;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
 }
 
-    header h1{
-    font-size: 2.25rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-    display: flex;
-    flex-wrap: flex;
-    justify-content: center;
-    text-align: center;
-    width: 87%;
-    color : white;
-    margin: 0 10%;
-    letter-spacing: .5rem;
-    }
-    header p{
-    width :90%;
-    font-size: 1rem;
-    margin: 5%;
-    color:white;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
-    line-height: 2rem;
-    text-align: center;
+header h1 {
+  font-size: 2.25rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: flex;
+  justify-content: center;
+  text-align: center;
+  width: 87%;
+  color : white;
+  margin: 0 10%;
+  letter-spacing: .5rem;
+}
+
+header p {
+	width: 90%;
+	font-size: 1rem;
+	margin: 5%;
+	color: white;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
+	line-height: 2rem;
+	text-align: center;
 }
 
 header .nav {
-    width: 100%;
-    flex-direction: column;
-    margin: auto;
-    padding: 0;
-    color: white;
+  width: 100%;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  color: white;
 }
 
-header  .nav .tab .menu {
+header .nav .tab .menu {
   width: 33%;
   display: flex;
   flex-wrap: flex;
-  justify-content:center;
-  margin: 0 33%;
+  justify-content: center;
+  margin: auto;
   padding: 0 1.25rem 0 1.45rem;
   font-size: 1.2rem;
   border: 1px solid white;
   line-height: 4.75rem;
   text-decoration: none;
-  color:white;
+  color: white;
   text-transform: uppercase;
   letter-spacing: .2rem;
   cursor: pointer;
 }
-/* header  .nav:hover {
-  background: rgb(34, 29, 29);
-} */
-.components{
+
+.components {
   width : 100%;
   margin : 5% auto 0 auto;
   align-content: center;
-  border-top: 1px dotted pink;
 }
 
 .components .component {
@@ -224,6 +261,7 @@ header  .nav .tab .menu {
   margin: 0 auto;
   color: white;
 }
+
 .components .component .title {
   text-transform: uppercase;
   margin: 0 auto;
@@ -234,7 +272,8 @@ header  .nav .tab .menu {
   line-height: 2.8rem;
   text-align: center;
 }
-.components .component p{
+
+.components .component p {
   width: 100%;
   font-size: 1rem;
   letter-spacing: .3rem;
