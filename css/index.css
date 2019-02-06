@@ -225,6 +225,11 @@ header .nav {
   color: white;
 }
 
+.tab {
+	display: flex;
+	width: 100%;
+}
+
 header .nav .tab .menu {
   width: 33%;
   display: flex;
