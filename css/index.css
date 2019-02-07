@@ -193,27 +193,28 @@ header .top{
 }
 
 header h1 {
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   line-height: 1.4;
   text-transform: uppercase;
   display: flex;
   flex-wrap: flex;
   justify-content: center;
   text-align: center;
-  width: 87%;
+  width: 83%;
   color : white;
   margin: 0 10%;
   letter-spacing: .5rem;
 }
 
 header p {
-	width: 90%;
-	font-size: 1rem;
-	margin: 5%;
+	width: 99%;
+	font-size: 2rem;
+	margin: 4% 0%;
 	color: white;
 	letter-spacing: .3rem;
 	text-transform: uppercase;
 	line-height: 2rem;
+	font-family: 'inherit';
 	text-align: center;
 }
 
@@ -230,16 +231,15 @@ header .nav {
 	width: 14rem;
 	display: flex;
 	flex-wrap: wrap;
-	height: 2rem;
+	height: 4rem;
 	cursor: pointer;
 	padding: .7rem;
 	margin: 1% auto;
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 4px;
-	background-color: navy;
+	background: unset;
 	color: white;
-	letter-spacing: 0.5rem;
 	font-family: 'inherit';
 }
 
@@ -252,12 +252,6 @@ a {
 	width: 100%;
 }
 
-header .nav:hover {
-		text-decoration: none;
-		color: white;
-		transition: background-color .5s
-}
-
 header .nav .tab .menu {
   width: 33%;
   display: flex;
@@ -265,7 +259,7 @@ header .nav .tab .menu {
   justify-content: center;
   margin: auto;
   padding: 0 1.25rem 0 1.45rem;
-	border-radius: 10px;
+	border-radius: 5px;
   font-size: 1.2rem;
   border: 1px solid white;
   line-height: 4.75rem;
@@ -308,7 +302,7 @@ header .nav .tab .menu {
 }
 
 .components .component p {
-  width: 100%;
+  width: 70%;
   font-size: 1rem;
   letter-spacing: .3rem;
   text-transform: uppercase;
@@ -316,8 +310,8 @@ header .nav .tab .menu {
   text-align: center;
   margin: 5%;
   text-align: center;
-
 }
+
 @media (max-width: 500px) {
 	.tab {
 		flex-direction: column;
@@ -326,6 +320,12 @@ header .nav .tab .menu {
 
 .menu:hover {
 	background-color: gray;
+	transition: background-color .5s;
+}
+
+button:hover {
+	background-color: gray;
+	transition: background-color .5s;
 }
 
 @media (min-width: 500px) {
@@ -337,10 +337,9 @@ header .nav .tab .menu {
     header .top{
         width: 60%;
         max-height: 50rem;
-        padding: 3rem 2rem;
+        padding: 1rem 2rem;
         overflow: hidden;
-        margin: 10% 20% 0 20%;
-        border-top-color: initial;
+        margin: 6% 20% 0 20%;
         border-top: 2px solid white;
         border-bottom: 2px solid white;
     }
