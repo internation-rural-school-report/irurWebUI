@@ -255,6 +255,7 @@ a {
 
 header .nav .tab .menu {
   width: 33%;
+	min-width: 54px;
   display: flex;
   flex-wrap: flex;
   justify-content: center;
@@ -277,6 +278,7 @@ header .nav .tab .menu {
   align-content: center;
 }
 
+
 .components .component {
   border-bottom: 1px solid white;
   display: flex;
@@ -286,9 +288,18 @@ header .nav .tab .menu {
   flex-direction: column;
   width: 80%;
   height: 500px;
+	display: none;
   padding: 24px;
   margin: 0 auto;
   color: white;
+}
+
+.component {
+	display: none;
+}
+
+.components .component-select {
+	display: block;
 }
 
 .components .component .title {
@@ -318,6 +329,7 @@ header .nav .tab .menu {
 		flex-direction: column;
 	}
 }
+
 
 .menu:hover {
 	background-color: gray;
@@ -381,6 +393,7 @@ button:hover {
 
     header .nav .tab .menu {
       width: 25%;
+			min-width: 115px;
       margin: 0%;
       font-size: 1.2rem;
       letter-spacing: .2rem;
@@ -403,7 +416,7 @@ button:hover {
 
   	.components .component {
       border-bottom: 1px solid white;
-      display: flex;
+      display: none;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
@@ -413,6 +426,11 @@ button:hover {
       margin: 0 auto;
       color: white;
     }
+
+		.components .component-select {
+			display: flex;
+		}
+
     .components .component .title {
       letter-spacing: .2rem;
       font-size: 2.25rem;
