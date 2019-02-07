@@ -418,11 +418,12 @@ button:hover {
       line-height: 1.4;
 
     }
-    .components .component p{
+
+    .components .component p {
       width: 100%;
-      font-size: 1rem;
+      font-size: 1.7rem;
       margin: 5%;
-      letter-spacing: .3rem;
+      letter-spacing: inherit;
       line-height: 2rem;
     }
 }
