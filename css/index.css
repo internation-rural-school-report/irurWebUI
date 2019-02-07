@@ -320,8 +320,7 @@ header .nav .tab .menu {
   text-transform: uppercase;
   line-height: 2rem;
   text-align: center;
-  margin: 5%;
-  text-align: center;
+  margin: 14%;
 }
 
 @media (max-width: 500px) {
