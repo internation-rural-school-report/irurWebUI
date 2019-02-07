@@ -228,7 +228,7 @@ header .nav {
 
 .submit button {
 	justify-content: center;
-	width: 14rem;
+	width: 13rem;
 	display: flex;
 	flex-wrap: wrap;
 	height: 4rem;
@@ -381,7 +381,7 @@ button:hover {
     }
 
     header .nav {
-      width: 35%;
+      width: 43%;
       flex-direction: row;
       display: flex;
       flex-wrap: wrap;
@@ -441,7 +441,7 @@ button:hover {
       width: 100%;
       font-size: 1.7rem;
       margin: 5%;
-      letter-spacing: inherit;
+      letter-spacing: 0.3rem;
       line-height: 2rem;
     }
 }
