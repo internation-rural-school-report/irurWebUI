@@ -1,0 +1,450 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'inherit', sans-serif;
+    font-size: 62.5%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'inherit';
+    letter-spacing: 100%;
+    margin-bottom: 2%;
+    font-weight: 600px;
+}
+
+header {
+    justify-content: center;
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 52px;
+  padding-bottom: 10px;
+}
+h4 {
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+p {
+  font-size: 26px;
+  line-height: 1.7;
+  padding-bottom: 10px;
+}
+
+.main-page {
+	background-image: url("../img/image-3.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+header .top {
+    width: 90%;
+    max-height: 50rem;
+    padding: 3rem 2rem;
+    overflow: hidden;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+    margin: 20% auto 5% auto;
+    border-top-color: white;
+}
+
+header h1 {
+  font-size: 3.25rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: flex;
+  justify-content: center;
+  text-align: center;
+  width: 83%;
+  color : white;
+  margin: 0 10%;
+  letter-spacing: .5rem;
+}
+
+header p {
+	width: 99%;
+	font-size: 2rem;
+	margin: 4% 0%;
+	color: white;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
+	line-height: 2rem;
+	font-family: 'inherit';
+	text-align: center;
+}
+
+header .nav {
+  width: 100%;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  color: white;
+}
+
+.submit button {
+	justify-content: center;
+	width: 13rem;
+	display: flex;
+	flex-wrap: wrap;
+	height: 4rem;
+	cursor: pointer;
+	padding: .7rem;
+	margin: 1% auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 4px;
+	background: unset;
+	color: white;
+	font-family: 'inherit';
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.tab {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+header .nav .tab .menu {
+  width: 27%;
+	min-width: 54px;
+  display: flex;
+  flex-wrap: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0 1.25rem 0 1.45rem;
+	border-radius: 5px;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  line-height: 4.75rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  cursor: pointer;
+}
+
+.components {
+  width: 100%;
+  margin: 5% auto 0 auto;
+  align-content: center;
+}
+
+
+.components .component {
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 500px;
+	display: none;
+  padding: 24px;
+  margin: 0 auto;
+  color: white;
+}
+
+.component {
+	display: none;
+}
+
+.components .component-select {
+	display: block;
+}
+
+.components .component .title {
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 2.25rem;
+  font-family: 'inherit';
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  line-height: 2.8rem;
+  text-align: center;
+}
+
+.components .component p {
+  width: 70%;
+  font-size: 1rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+  text-align: center;
+  margin: 14%;
+}
+
+@media (max-width: 500px) {
+	.tab {
+		flex-direction: column;
+	}
+}
+
+
+.menu:hover {
+	background-color: gray;
+	transition: background-color .5s;
+}
+
+button:hover {
+	background-color: gray;
+	transition: background-color .5s;
+}
+
+@media (min-width: 500px) {
+    header {
+        width: 100%;
+        margin: auto;
+    }
+
+    header .top{
+        width: 60%;
+        max-height: 50rem;
+        padding: 1rem 2rem;
+        overflow: hidden;
+        margin: 6% 20% 0 20%;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    p {
+        width: 60%;
+        font-size: 1.2rem;
+        margin: 0 auto 4%;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        line-height: 2rem;
+        text-align: center;
+        padding-top: 2%;
+    }
+    h1 {
+        font-size: 3.5rem;
+        padding-top: 5%;
+        border : 0;
+        text-transform: uppercase;
+        line-height: 3.75rem;
+        display: flex;
+        flex-wrap: flex;
+        justify-content: center;
+        color: white;
+        margin: 4% auto;
+        align-content: center;
+    }
+
+    header .nav {
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1% auto;
+      padding: 2% 0px;
+      color: white;
+    }
+
+    header .nav .tab .menu {
+      width: 8%;
+			min-width: 85px;
+      margin: 0%;
+      font-size: 1.2rem;
+      letter-spacing: .2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 3.9rem;
+    }
+
+    header .nav:hover {
+        text-decoration: none;
+				color: white;
+				transition: background-color .5s
+    }
+
+    .components {
+        width : 100%;
+        margin : auto;
+        align-content: center;
+    }
+
+  	.components .component {
+      border-bottom: 1px solid white;
+      display: none;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+      height: 500px;
+      margin: 0 auto;
+      color: white;
+    }
+
+		.components .component-select {
+			display: flex;
+		}
+
+    .components .component .title {
+      letter-spacing: .2rem;
+      font-size: 2.25rem;
+      line-height: 1.4;
+
+    }
+
+    .components .component p {
+      width: 100%;
+      font-size: 1.7rem;
+      margin: 5%;
+      letter-spacing: 0.3rem;
+      line-height: 2rem;
+    }
+}
